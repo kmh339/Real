@@ -30,6 +30,12 @@
         <activity android:name=".RecommendActivity">
 
         </activity>
+
+        <activity android:name=".RecyclerActivity">
+
+        </activity>
+
+
     </application>
 
 </manifest>
