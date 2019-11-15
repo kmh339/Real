@@ -11,7 +11,6 @@ public class RecommendActivity extends AppCompatActivity {
     private final int GET_GALLERY_IMAGE = 200;
     private ImageView imageView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -27,6 +26,7 @@ public class RecommendActivity extends AppCompatActivity {
                 startActivityForResult(intent, GET_GALLERY_IMAGE);
             }
         });
+
     }
 
     @Override
