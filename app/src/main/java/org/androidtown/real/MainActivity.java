@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button recommend_btn;
+    Button test_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
                 //인텐트 선언 -> 현재 액티비티, 넘어갈 액티비티
                 Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
                 //인텐트 실행
+                startActivity(intent);
+            }
+        });
+
+        test_btn = findViewById(R.id.mycody_btn);
+        test_btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, RecommendActivity.class);
                 startActivity(intent);
             }
         });
